@@ -1,0 +1,19 @@
+% global gui
+<html>
+[include header.inc]	
+<body>
+[include navbar.inc]
+	  
+<div class="container">
+	<div class="row">
+<h1>Gui Dump</h1>	
+<table class="table table-hover table-bordered table-striped table-condensed">
+% foreach n [lsort -dictionary [array names gui]] {
+<tr><td>$n</td><td>$gui($n)</td></tr>
+% }
+</table>
+
+</div>
+</div>
+</body>
+</html>

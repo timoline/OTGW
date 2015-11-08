@@ -1,0 +1,61 @@
+%# -*- html -*-
+% global cfg theme
+<html>
+[include header.inc]
+<body>
+[include navbar.inc]
+
+<div class="container">
+	<div class="row">
+<h1>Clock</h1>
+
+<div>
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="auto">auto:</label>
+    <div class="col-sm-2">
+      <input type="checkbox" state="$cfg(clock,auto)">
+    </div>
+    <div class="col-sm-8">
+		<div class="alert alert-info">
+			clock,auto $cfg(clock,auto)
+			Automatically update the gateway clock
+		</div>
+    </div>	
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="date">date:</label>
+    <div class="col-sm-2"> 
+      <input type="checkbox" state="$cfg(clock,date)">
+    </div>
+    <div class="col-sm-8">
+		<div class="alert alert-info">
+			clock,date $cfg(clock,date)
+			Send the current date to the gateway
+		</div>
+    </div>		
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="year">year:</label>
+    <div class="col-sm-2"> 
+      <input type="checkbox" state="$cfg(clock,year)">
+    </div>
+    <div class="col-sm-8">
+		<div class="alert alert-info">
+			clock,year $cfg(clock,year)
+			Send the current year to the gateway
+		</div>
+    </div>		
+  </div>  
+  
+  <hr>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+</div>
+</div>
+</div>
+<!--[include footer.inc]-->
+</body>
+</html>

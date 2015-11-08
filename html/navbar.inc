@@ -1,0 +1,63 @@
+<!-- *** NAVBAR ************************************************************ -->					
+<nav class="navbar navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->	
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="showMenu" class="navbar-brand" href="#">Opentherm Gateway</a>			
+		</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="graph.html">Graph</a></li>
+				<li><a href="messages.html">Messages</a></li>
+				<li><a href="summary.html">Statistics</a></li>				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="alert.html">Alert</a></li>
+						<li><a href="Clock.html">Clock</a></li>
+						<li><a href="Connection.html">Connection</a></li>
+						<li><a href="Datalog.html">Datalog</a></li>
+						<li><a href="Email.html">Email</a></li>
+						<li><a href="upgrade.html">Firmware Upgrade</a></li>	
+						<li><a href="Mqtt.html">Mqtt</a></li>
+						<li><a href="Server.html">Server</a></li>
+						<li><a href="Sms.html">Sms</a></li>
+						<li><a href="Thinkspeak.html">Thinkspeak</a></li>		
+						<li><a href="View.html">View</a></li>
+						<li><a href="Web.html">Web</a></li>						
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="userpages.html">Custom web pages</a></li>
+						<li><a href="dbus.html">Using DBus</a></li>
+						<li><a href="print.html">Getting gateway settings</a></li>
+						<li><a href="attributions.html">Attributions</a></li>
+						<li><a href="http://otgw.tclcode.com/" target="_blank">OTGW Website</a></li>
+						<li><a href="http://www.domoticaforum.eu/viewforum.php?f=75" target="_blank">OTGW Forum</a></li>					
+					</ul>
+				</li>	
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dumps <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="dump_gui.html">Gui</a></li>
+						<li><a href="dump_cfg.html">Cfg</a></li>
+						<li><a href="dump_msg.html">Msg</a></li>
+						<li><a href="dump_msglog.html">Msglog</a></li>
+						<li><a href="dump_error.html">Error</a></li>				
+					</ul>
+				</li>				
+			</ul>
+		</div>
+	<!-- /.navbar-collapse -->
+	</div>
+</nav>  
