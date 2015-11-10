@@ -22,17 +22,17 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li class="active"><a href="alert.html">Alert</a></li>
-						<li><a href="Clock.html">Clock</a></li>
-						<li><a href="Connection.html">Connection</a></li>
-						<li><a href="Datalog.html">Datalog</a></li>
-						<li><a href="Email.html">Email</a></li>
+						<li><a href="clock.html">Clock</a></li>
+						<li><a href="connection.html">Connection</a></li>
+						<li><a href="datalog.html">Datalog</a></li>
+						<li><a href="email.html">Email</a></li>
 						<li><a href="upgrade.html">Firmware Upgrade</a></li>	
-						<li><a href="Mqtt.html">Mqtt</a></li>
-						<li><a href="Server.html">Server</a></li>
-						<li><a href="Sms.html">Sms</a></li>
-						<li><a href="Thinkspeak.html">Thinkspeak</a></li>		
-						<li><a href="View.html">View</a></li>
-						<li><a href="Web.html">Web</a></li>						
+						<li><a href="mqtt.html">Mqtt</a></li>
+						<li><a href="server.html">Server</a></li>
+						<li><a href="sms.html">Sms</a></li>
+						<li><a href="thinkspeak.html">Thinkspeak</a></li>		
+						<li><a href="view.html">View</a></li>
+						<li><a href="web.html">Web</a></li>						
 					</ul>
 				</li>
 				<li class="dropdown">
