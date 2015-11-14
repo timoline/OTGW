@@ -1,1 +1,0 @@
-$(selector).attr('checked') !== undefined
