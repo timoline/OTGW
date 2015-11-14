@@ -50,6 +50,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dumps <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="json">json</a></li>
+						<li><a href="dashboard.html">Dashboard</a></li>
 						<li><a href="dump_gui.html">Gui</a></li>
 						<li><a href="dump_cfg.html">Cfg</a></li>
 						<li><a href="dump_msg.html">Msg</a></li>
