@@ -61,8 +61,8 @@
 %	if {$col == 0} {
 <tr>
 % }
-<td width="25%">$s</td>
-<td width="8%"><img width="16" height="16" class="$class" src="images/blank.png" id="$n"></td>
+<td>$s</td>
+<td><img width="16" height="16" class="$class" src="images/blank.png" id="$n"></td>
 %	if {[incr col] > 2} {
 %		set col 0
 </tr>
@@ -79,9 +79,9 @@
 %	} else {
 <td width="20px">&nbsp;</td>
 %	}
-<td width="36%">$s</td>
-<td width="8%" align="right" id="$n">$v</td>
-<td width="5%">$u</td>
+<td>$s</td>
+<td align="right" id="$n">$v</td>
+<td>$u</td>
 %	if {[incr col] > 1} {
 %		set col 0
 </tr>
@@ -93,8 +93,8 @@
 <table class="table table-hover table-bordered table-condensed">
 <tr>
 % for {set i 1} {$i <= 4} {incr i} {
-<td align="center" width="100pt">Error 0$i:</td>
-<td align="center" width="50pt" id="error$i">$error($i)</td>
+<td align="center" >Error 0$i:</td>
+<td align="center" id="error$i">$error($i)</td>
 % }
 </tr>
 </table>
