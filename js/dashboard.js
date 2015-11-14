@@ -33,8 +33,9 @@ $(document).ready(function() {
             dataType: "json",
             cache: false,
             success: function(json) {
-            //console.log(json)
+
 			json = json.otgw;
+            console.log(json)			
 //******************************************************************************************
 				for (var key in json)
 				{									
