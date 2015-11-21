@@ -43,7 +43,8 @@
 						<li><a href="print.html">Getting gateway settings</a></li>
 						<li><a href="attributions.html">Attributions</a></li>
 						<li><a href="http://otgw.tclcode.com/" target="_blank">OTGW Website</a></li>
-						<li><a href="http://www.domoticaforum.eu/viewforum.php?f=75" target="_blank">OTGW Forum</a></li>					
+						<li><a href="http://www.domoticaforum.eu/viewforum.php?f=75" target="_blank">OTGW Forum domoticaforum.eu</a></li>					
+						<li><a href="http://gathering.tweakers.net/forum/list_messages/1653967" target="_blank">OTGW Forum tweakers.net</a></li>	
 					</ul>
 				</li>	
 				<li class="dropdown">
