@@ -12,16 +12,16 @@
 	<div class="row-content">
 <h1>Statistics</h1>
 <div>
-<table id="stats" class="table table-hover table-bordered table-striped table-condensed">
+<table id="stats" class="table table-hover table-striped table-condensed">
 <thead>
-<tr>
-<th><a href="?sort=id">Hex</a></th>
-<th><a href="?sort=id">Dec</a></th>
-<th><a href="?sort=dir">Direction</a></th>
-<th><a href="?sort=name">Description</a></th>
-<th><a href="?sort=freq">Interval</a></th>
-<th><a href="?sort=value">Value</a></th>
-</tr>
+	<tr>
+		<th><a href="?sort=id">Hex</a></th>
+		<th><a href="?sort=id">Dec</a></th>
+		<th><a href="?sort=dir">Direction</a></th>
+		<th><a href="?sort=name">Description</a></th>
+		<th><a href="?sort=freq">Interval</a></th>
+		<th><a href="?sort=value">Value</a></th>
+	</tr>
 </thead>
 % set now [clock seconds]
 % set sort desc
@@ -55,14 +55,14 @@
 % if {[llength (n)] > 1} {
 % foreach n [lsort $opt -index $index $list] {
 %     lassign $n id msg freq dir val
-<tr>
-<td align="center">[format %02X $id]</td>
-<td align="right">$id</td>
-<td align="center">$dir</td>
-<td>$msg</td>
-<td align="right">$freq</td>
-<td align="right">$val</td>
-</tr>
+	<tr>
+		<td align="center">[format %02X $id]</td>
+		<td align="right">$id</td>
+		<td align="center">$dir</td>
+		<td>$msg</td>
+		<td align="right">$freq</td>
+		<td align="right">$val</td>
+	</tr>
 % }}
 </tbody>
 </table>
