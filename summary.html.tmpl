@@ -15,12 +15,12 @@
 <table id="stats" class="table table-hover table-striped table-condensed">
 <thead>
 	<tr>
-		<th><a href="?sort=id">Hex</a></th>
-		<th><a href="?sort=id">Dec</a></th>
-		<th><a href="?sort=dir">Direction</a></th>
-		<th><a href="?sort=name">Description</a></th>
-		<th><a href="?sort=freq">Interval</a></th>
-		<th><a href="?sort=value">Value</a></th>
+		<th class="text-right"><a href="?sort=id">Hex</a></th>
+		<th class="text-right"><a href="?sort=id">Dec</a></th>
+		<th class="text-center"><a href="?sort=dir">Direction</a></th>
+		<th class="text-left"><a href="?sort=name">Description</a></th>
+		<th class="text-right"><a href="?sort=freq">Interval</a></th>
+		<th class="text-right"><a href="?sort=value">Value</a></th>
 	</tr>
 </thead>
 % set now [clock seconds]
@@ -51,19 +51,18 @@
 %     default {set index 1; set opt -dictionary}
 % }
 <tbody>
-%# fix here ???
-% if {[llength (n)] > 1} {
+
 % foreach n [lsort $opt -index $index $list] {
 %     lassign $n id msg freq dir val
 	<tr>
-		<td align="center">[format %02X $id]</td>
-		<td align="right">$id</td>
-		<td align="center">$dir</td>
-		<td>$msg</td>
-		<td align="right">$freq</td>
-		<td align="right">$val</td>
+		<td class="text-right">[format %02X $id]</td>
+		<td class="text-right">$id</td>
+		<td class="text-center">$dir</td>
+		<td class="text-left">$msg</td>
+		<td class="text-right">$freq</td>
+		<td class="text-right">$val</td>
 	</tr>
-% }}
+% }
 </tbody>
 </table>
 </div>
