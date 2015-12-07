@@ -1,5 +1,5 @@
 //var oldvalue= 0;
-var oldjson = 0;
+oldjson=""; //
 
 $(document).ready(function() {
 
@@ -34,22 +34,30 @@ $(document).ready(function() {
             cache: false,
             success: function(json) {
 
-			json = json.otgw;
-            console.log(json)			
+			json = json;
+            //console.log(json)			
+		
+			//$("#temperature").html(json.temperature.value);
+			//$("#outside").html(json.outside.value);
+			//delete json.otgw			
 //******************************************************************************************
 				for (var key in json)
 				{									
-					var value = json[key];
+					var key = key ;
+					var val = json[key].value;
+					//var oldvalue = json[key].value;
 					var oldvalue = oldjson[key];
 
 					//$('#'+key).html(json[key]);  
-					highlightValue(key,value,oldvalue); 
+					//highlightValue(key,val,oldvalue); 
+					highlightValue(key,val,oldvalue); 
 						
-					//console.log($('#'+key).html(json[key]));
+					console.log(key);
 				}
-				
 				oldjson = json;	
+
 				//console.log("oldjson: "+oldjson);
+				
             }             
         });              
     }

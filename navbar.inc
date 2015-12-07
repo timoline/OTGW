@@ -9,7 +9,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a id="showMenu" class="navbar-brand" href="#">Opentherm Gateway</a>			
+			<a id="showMenu" class="navbar-brand" href="\">Opentherm Gateway</a>			
 		</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -17,7 +17,8 @@
 				<li><a href="status.html">Status</a></li>
 				<li><a href="graph.html">Graph</a></li>
 				<li><a href="messages.html">Messages</a></li>
-				<li><a href="summary.html">Statistics</a></li>				
+				<li><a href="summary.html">Statistics</a></li>
+                <li><a href="iphone.html" target="_blank">Thermostat</a></li>		
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -56,7 +57,6 @@
 						<li><a href="dump_gui.html">Gui</a></li>
 						<li><a href="dump_cfg.html">Cfg</a></li>
 						<li><a href="dump_msg.html">Msg</a></li>
-						<li><a href="dump_msglog.html">Msglog</a></li>
 						<li><a href="dump_error.html">Error</a></li>				
 					</ul>
 				</li>				

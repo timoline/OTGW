@@ -1,0 +1,69 @@
+body {
+    background-color: #f1f1f1;	    
+    font-family: sans-serif;
+    margin: 0px;
+}
+hr {
+    border: 1px;
+    width: 100%;
+}
+th {
+    border-bottom: 1px solid #cccccc;
+    font-size: 24px;
+}
+td {
+    height: 100%;
+}
+div.setpoint {
+    font-size: 100px;
+}
+div.half {
+    font-size: 35px;
+}
+object {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+.main {
+    padding: 8px;
+}
+.main table {
+    border: 1px solid #000000;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    padding: 0px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    width: 100%;
+}
+.main button {
+    padding: 0px;
+    margin: 8px;
+    font-size: 24px;
+    width: 60px;
+}
+.nav {
+    position: absolute; bottom: 0px; width: 100%;
+}
+.nav table {
+    width: 100%;
+}
+.nav button {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #dddddd;
+    -webkit-border-radius:5px;
+    }
+input:active {
+    position:relative;
+    top: 3px;
+}
+#container {
+    position: relative;
+}
+#container #dhwmode {
+    position:absolute;
+    top: -26;
+    left: 0;
+}

@@ -52,7 +52,7 @@ h3{
     font-size: 18px;
 	color: #000000;	
 }
-
+ 
 /* Dashboard */
 .countUp{
     color:red;
@@ -87,4 +87,3 @@ img.checkset {
 img.checkunk {
   background-image:url('images/check-unk.png');
 }
-
