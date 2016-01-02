@@ -34,7 +34,7 @@ $(document).ready(function() {
             cache: false,
             success: function(json) {
 
-			json = json;
+			//json = json;
             //console.log(json)			
 		
 			//$("#temperature").html(json.temperature.value);
@@ -43,7 +43,7 @@ $(document).ready(function() {
 //******************************************************************************************
 				for (var key in json)
 				{									
-					var key = key ;
+					
 					var val = json[key].value;
 					//var oldvalue = json[key].value;
 					var oldvalue = oldjson[key];
@@ -52,11 +52,12 @@ $(document).ready(function() {
 					//highlightValue(key,val,oldvalue); 
 					highlightValue(key,val,oldvalue); 
 						
-					console.log(key);
+					//console.log(key);
 				}
-				oldjson = json;	
+				//oldjson = json;	
+                oldjson = JSON.parse(JSON.stringify(json));
 
-				//console.log("oldjson: "+oldjson);
+				console.log("oldjson: "+oldjson);
 				
             }             
         });              

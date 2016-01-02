@@ -18,7 +18,7 @@
 				<li><a href="graph.html">Graph</a></li>
 				<li><a href="messages.html">Messages</a></li>
 				<li><a href="summary.html">Statistics</a></li>
-                <li><a href="iphone.html" target="_blank">Thermostat</a></li>		
+                <li><a href="thermostat.html" target="_blank">Thermostat</a></li>		
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration <span class="caret"></span></a>
 					<ul class="dropdown-menu">
