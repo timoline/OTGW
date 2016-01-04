@@ -3,23 +3,7 @@ body {
     font-family: sans-serif;
     margin: 0px;
 }
-hr {
-    border: 1px;
-    width: 100%;
-}
 
-
-div.setpoint {
-    font-size: 100px;
-}
-div.half {
-    font-size: 35px;
-    text-align: left;
-}
-object {
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-}
 
 .main {
     max-width:600px;     
@@ -56,7 +40,7 @@ object {
 .btn-connection {
     font-size:12px;
     color:#ffffff;
-    background-color:#ffffff;
+    background-color:#d9534f;
     border-radius: 4px;
     border:0;
     padding:10px;
@@ -64,23 +48,30 @@ object {
     float:right;    
 }
 
+.setpoint {
+    font-size: 100px;
+}
+.half {
+    font-size: 35px;
+    text-align: left;
+}
 
-#container {
+.mode-container {
     position: relative;
 }
-#container #dhwmode {
+.mode-container .dhwmode {
     position:absolute;
     top: -26;
     left: 0;
 }
 
-.updown{
+.btn-updown{
     font-size: 40px;
     width: 80px; 
     height: 50px;
   
 }
-button { 
+.btn-updown button { 
   margin      : 0;
   padding     : 0;
   border      : 1px solid #cccccc; 
@@ -88,16 +79,16 @@ button {
   font-family : inherit;
   cursor      : pointer;
 } 
-button:hover{
+.btn-updown button:hover{
     background-color:#f1f1f1;  
     font-weight:bold;         
 }
 
-/* prg section */
-.prg-section {
+/* prog section */
+.prog-section {
 
 }
-.prg-section table {
+.prog-section table {
     border: 1px solid #cccccc;   
     padding: 8px;
     /*margin-top: 20px;*/
@@ -106,7 +97,7 @@ button:hover{
     border-collapse: collapse;
 }
 
-.prg-section td{
+.prog-section td{
     border: 1px solid #cccccc;
     padding: 8px;
 }
@@ -143,11 +134,11 @@ button:hover{
     float:right;    
 }
 
-/* button section */
-.btn-section {
+/* modes section */
+.modes-section {
 
 }
-.btn-section table {
+.modes-section table {
     border: 1px solid #cccccc;  
     padding: 0px;
     /*margin-top: 20px;*/
@@ -157,28 +148,24 @@ button:hover{
    
 }
 
-.btn-section tr + tr > td { border-top: 1px solid #cccccc; }
-.btn-section td + td { border-left: 1px solid #cccccc; }
+.modes-section tr + tr > td { border-top: 1px solid #cccccc; }
+.modes-section td + td { border-left: 1px solid #cccccc; }
 
-.btn-section  td:hover {
+.modes-section  td:hover {
     background-color:#f1f1f1;  
     font-weight:bold; 
 }
 
-.btn-sel {
+.btn-lg-sel {
     /*color: #d9534f;*/
     color: #428bca;
     font-weight:bold;
 
 }
 
-.btn-label{
-    font-size:20px;   
-    
+.btn-lg-label{
+    font-size:20px;       
 }
-
-
-
 
 #away,#home,#sleep,#comfort {
    text-align:center; 

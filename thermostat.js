@@ -59,6 +59,12 @@ function invoke(cmd) {
     }
 }
 
+function SendTemp(temp) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("POST", "command", false);
+    xmlHttp.send("TT=" + temp);
+}    
+
 var AWAYTEMP=15.0;
 var HOMETEMP=19.5;
 var SLEEPTEMP=17.0;
@@ -77,10 +83,10 @@ $('#up').click(function(){
   $("#manual").html("ON"); 
   $("#manual").css("background-color","#5cb85c");  
   
-  $('#away').removeClass("btn-sel"); 
-  $('#home').removeClass("btn-sel"); 
-  $('#sleep').removeClass("btn-sel"); 
-  $('#comfort').removeClass("btn-sel");   
+  $('#away').removeClass("btn-lg-sel"); 
+  $('#home').removeClass("btn-lg-sel"); 
+  $('#sleep').removeClass("btn-lg-sel"); 
+  $('#comfort').removeClass("btn-lg-sel");   
 });
 
 $('#down').click(function(){
@@ -91,10 +97,10 @@ $('#down').click(function(){
   $("#manual").html("ON"); 
   $("#manual").css("background-color","#5cb85c");  
   
-  $('#away').removeClass("btn-sel"); 
-  $('#home').removeClass("btn-sel"); 
-  $('#sleep').removeClass("btn-sel"); 
-  $('#comfort').removeClass("btn-sel");   
+  $('#away').removeClass("btn-lg-sel"); 
+  $('#home').removeClass("btn-lg-sel"); 
+  $('#sleep').removeClass("btn-lg-sel"); 
+  $('#comfort').removeClass("btn-lg-sel");   
 });
 
 $('#prog').click(function(){
@@ -105,69 +111,69 @@ $('#prog').click(function(){
   $("#manual").html("OFF"); 
   $("#manual").css("background-color","#d9534f");  
   
-  $('#away').removeClass("btn-sel"); 
-  $('#home').removeClass("btn-sel"); 
-  $('#sleep').removeClass("btn-sel"); 
-  $('#comfort').removeClass("btn-sel");   
+  $('#away').removeClass("btn-lg-sel"); 
+  $('#home').removeClass("btn-lg-sel"); 
+  $('#sleep').removeClass("btn-lg-sel"); 
+  $('#comfort').removeClass("btn-lg-sel");   
 });
 
 $('#away').click(function(){
-    //invoke("Prog");
+  //SendTemp(AWAYTEMP.toFixed(1));
   $("#prog").html("OFF"); 
   $("#prog").css("background-color","#d9534f");   
   $("#status").html("Temperature manually set to Away: "+AWAYTEMP.toFixed(1)+"&deg;");   
   $("#manual").html("ON"); 
   $("#manual").css("background-color","#5cb85c");  
   
-  $('#away').addClass("btn-sel"); 
+  $('#away').addClass("btn-lg-sel"); 
 
-  $('#home').removeClass("btn-sel"); 
-  $('#sleep').removeClass("btn-sel"); 
-  $('#comfort').removeClass("btn-sel");    
+  $('#home').removeClass("btn-lg-sel"); 
+  $('#sleep').removeClass("btn-lg-sel"); 
+  $('#comfort').removeClass("btn-lg-sel");    
 });
 
 $('#home').click(function(){
-    //invoke("Prog");
+  //SendTemp(HOMETEMP.toFixed(1));
   $("#prog").html("OFF"); 
   $("#prog").css("background-color","#d9534f");
   $("#status").html("Temperature manually set to Home: "+HOMETEMP.toFixed(1)+"&deg;");     
   $("#manual").html("ON"); 
   $("#manual").css("background-color","#5cb85c");  
   
-  $('#home').addClass("btn-sel");   
+  $('#home').addClass("btn-lg-sel");   
   
-  $('#away').removeClass("btn-sel"); 
-  $('#sleep').removeClass("btn-sel"); 
-  $('#comfort').removeClass("btn-sel");    
+  $('#away').removeClass("btn-lg-sel"); 
+  $('#sleep').removeClass("btn-lg-sel"); 
+  $('#comfort').removeClass("btn-lg-sel");    
 });
 
 $('#sleep').click(function(){
-    //invoke("Prog");
+  SendTemp(SLEEPTEMP.toFixed(1));
   $("#prog").html("OFF"); 
   $("#prog").css("background-color","#d9534f");  
   $("#status").html("Temperature manually set to Sleep: "+SLEEPTEMP.toFixed(1)+"&deg;");      
   $("#manual").html("ON"); 
   $("#manual").css("background-color","#5cb85c");  
   
-  $('#sleep').addClass("btn-sel");  
+  $('#sleep').addClass("btn-lg-sel");  
   
-  $('#away').removeClass("btn-sel"); 
-  $('#home').removeClass("btn-sel"); 
-  $('#comfort').removeClass("btn-sel");    
+  $('#away').removeClass("btn-lg-sel"); 
+  $('#home').removeClass("btn-lg-sel"); 
+  $('#comfort').removeClass("btn-lg-sel");    
 });
 
 $('#comfort').click(function(){
-    //invoke("Prog");
+  //SendTemp(COMFORTTEMP.toFixed(1));
   $("#prog").html("OFF"); 
   $("#prog").css("background-color","#d9534f");  
   $("#status").html("Temperature manually set to Comfort: "+COMFORTTEMP.toFixed(1)+"&deg;");      
   $("#manual").html("ON"); 
   $("#manual").css("background-color","#5cb85c");  
   
-  $('#comfort').addClass("btn-sel");    
+  $('#comfort').addClass("btn-lg-sel");    
   
-  $('#away').removeClass("btn-sel"); 
-  $('#home').removeClass("btn-sel"); 
-  $('#sleep').removeClass("btn-sel"); 
+  $('#away').removeClass("btn-lg-sel"); 
+  $('#home').removeClass("btn-lg-sel"); 
+  $('#sleep').removeClass("btn-lg-sel"); 
 });
 

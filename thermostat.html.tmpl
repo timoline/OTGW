@@ -52,9 +52,9 @@
 <tr>
     <td width="20%"></td>
     <td valign="center" width="40">
-        <span id="container">
-            <img id='chmode' src='images/chmode-[onoff $val(chmode)].png'>
-            <img id='dhwmode' src='images/dhwmode-[onoff $val(dhwmode)].png'>
+        <span class="mode-container">
+            <img class='chmode' src='images/chmode-[onoff $val(chmode)].png'>
+            <img class='dhwmode' src='images/dhwmode-[onoff $val(dhwmode)].png'>
         </span>
     </td>
     <td width="20%"></td>
@@ -67,7 +67,9 @@
     <td width="20%"></td>
     <td width="40" align="center">
         <!--<input id="up" type="image" name="hvac" value="+" src="images/warmer.png" onclick="return invoke('Up')">-->
-        <button type="button" id="up" class="updown" onclick="return invoke('Up')">+</button>
+        <span class="btn-updown">
+            <button type="button" id="up" class="btn-updown" onclick="return invoke('Up')">+</button>
+        </span>
     </td>
     <td width="20%"></td>
 </tr>
@@ -83,7 +85,9 @@
     <td></td>
     <td align="center">
         <!--<input id="down" type="image" name="hvac" value="+" src="images/colder.png" onclick="return invoke('Down')">-->
-        <button type="button" id="down" class="updown" onclick="return invoke('Down')">-</button>
+        <span class="btn-updown">
+            <button type="button" id="down" class="btn-updown" onclick="return invoke('Down')">-</button>
+        </span>
     </td>
     <td></td>
 </tr>
@@ -95,7 +99,7 @@
 </form>
 </div>
 
-<div class="prg-section">
+<div class="prog-section">
 <table>
     <tr>
         <td>
@@ -115,25 +119,25 @@
 
 <br>
 
-<div class="btn-section">
+<div class="modes-section">
 <table>
     <tr>
         <td id="away">
-            <div class="btn-label">Away</div>
+            <div class="btn-lg-label">Away</div>
             <span id="away-value"></span><span>&deg;</span>
         </td>
         <td id="home">
-            <div class="btn-label">Home</div>
+            <div class="btn-lg-label">Home</div>
             <span id="home-value"></span><span>&deg;</span>
         </td>
     </tr>
     <tr>
         <td id="sleep">
-            <div class="btn-label">Sleep</div>
+            <div class="btn-lg-label">Sleep</div>
             <span id="sleep-value"></span><span>&deg;</span>
         </td>
         <td id="comfort">
-            <div class="btn-label">Comfort</div>
+            <div class="btn-lg-label">Comfort</div>
             <span id="comfort-value"></span><span>&deg;</span>
         </td>
     </tr>
